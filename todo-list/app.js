@@ -12,10 +12,10 @@ addTaskBtn.addEventListener('click', ()=>{
         titleList = localItems;
         taskList = localItems;
     }
-    taskList.push(inputValue.value)
     titleList.push(titleValue.value)
-    localStorage.setItem('localItem', JSON.stringify(taskList))
+    taskList.push(inputValue.value)
     localStorage.setItem('localItem', JSON.stringify(titleList))
+    localStorage.setItem('localItem', JSON.stringify(taskList))
     }
     
     showTitle()
